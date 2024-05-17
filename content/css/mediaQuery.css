@@ -1,0 +1,92 @@
+:root {
+    --green:  rgb(56, 177, 56);
+    --gray : rgb(71, 71, 71);
+    --hover-green : :rgb(70, 213, 70);
+}
+
+
+@media only screen and (min-width: 992px) {
+    .cont-left .checkbtn{
+        display: none;
+    }
+}
+
+
+@media (min-width: 200px) and (max-width: 991px)    {
+    nav{
+        line-height: 80px;
+    }
+    .checkbtn{
+        display: block;
+        cursor: pointer;
+        color: #eee;
+    }
+  
+    .cont-left{
+        display: block;
+        width:100%;
+    }
+    .cont-right{
+        position: fixed;
+        top: 68px;
+        left: 100%;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color:var(--green);
+        text-align: center;
+        transition: all 0.5s;
+    }
+    
+    .logo{
+        font-size: 10px !important;
+        font-weight: 500 !important;
+        font-size: 30px !important;
+        letter-spacing: 10px !important;
+    }
+  ul{
+    padding: 0 10px;
+  }
+    ul li{
+        display: block !important;
+        width: 100%;
+        margin: 40px 0;
+        line-height: 30px;
+        
+    }
+    ul li a{
+        display: block !important;
+
+    }
+    a:hover{
+        background-color:var(--hover-green);
+        color:#eee ;
+    }
+    .cont-left #check:checked ~ #toggle{
+        left: 0% !important;
+
+    }
+    #check:checked ~ div{
+        left: 0%;
+    }
+}
+
+
+
+/* Media --> TourGuides.html page */
+
+@media (min-width: 200px) and (max-width: 992px){
+   section .container{
+        display: flex;
+        flex-direction: column !important;
+        margin: 20px 0;
+    }
+
+    section .one-guide , .two-guide{
+        margin: 20px 0px;
+        }
+    section .one-guide:hover , .two-guide:hover{
+        border: 1px solid rgb(181, 177, 177);
+        transition: all 1s;
+    }
+}
