@@ -7,25 +7,23 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Tahoma;
 }
 
 nav {
     background-color: var(--gray);
 }
 .container-nav {
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
-}
-
-.cont-left {
-    align-self: center;
+    align-items: center;
 }
 
 .cont-left label.logo {
     color: var(--green);
     font-size: 50px;
     font-weight: bold;
-    padding-left: 30px;
     letter-spacing: 10px;
 }
 
@@ -34,15 +32,14 @@ nav {
 }
 
 .cont-right ul li a {
-    padding: 15px 15px;
+    padding: 1rem;
     letter-spacing: 1px;
     color: #eee;
     font-family: sans-serif;
-    border-radius: 13px;
+    border-radius: 7px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 1.2rem;
 }
-a.active,
 a:hover {
     background-color: var(--green);
 }
@@ -63,7 +60,19 @@ a:hover {
 
 /* ========== Main Home ================== */
 main {
-    width: 100%;
-    height: 100vh;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
     background-image: url(../photos/pyramids.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-wrapper {
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 4rem;
 }
